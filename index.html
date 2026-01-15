@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oh Sushi - Menu</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- NAVIGATION MENU -->
+    <header class="site-header">
+        <div class="nav-container">
+            <div class="logo-area">
+                <img src="logo.png" alt="Oh Sushi Logo" class="site-logo">
+                <div class="business-name">
+                    <h1>OH SUSHI</h1>
+                </div>
+            </div>
+            
+            <nav class="main-navigation">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="menu.html">MENU</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                    <li><a href="#" id="cart-icon" class="cart-link"> Cart (<span id="cart-count">0</span>)</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- QUANTITY MODAL -->
+    <div id="quantity-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title">Select Quantity</h2>
+            <p id="modal-price"></p>
+            
+            <div class="quantity-selector">
+                <button id="decrease-qty" class="qty-btn">-</button>
+                <input type="number" id="quantity-input" value="1" min="1">
+                <button id="increase-qty" class="qty-btn">+</button>
+            </div>
+            
+            <button id="confirm-add" class="confirm-btn">Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- SHOPPING CART SECTION -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content cart-modal-content">
+            <span class="close">&times;</span>
+            <h2>Shopping Cart</h2>
+            
+            <div id="cart-items-container" class="cart-items-container">
+                <p class="empty-cart">Your cart is empty</p>
+            </div>
+            
+            <div class="cart-summary">
+                <h3>Total: ₱<span id="cart-total">0</span></h3>
+                <button id="checkout-btn" class="checkout-btn">Proceed to Checkout</button>
+                <button id="clear-cart-btn" class="clear-cart-btn">Clear Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero-section">
+        <div class="hero-wrapper">
+            <img src="hero.png" alt="Hero Image" class="hero-img">
+            <div class="hero-cta">
+                <a href="menu.html" class="btn">Order Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- HEADLINE SECTION -->
+    <section class="headline-section">
+        <div class="section-container">
+            <p class="subheadline">Handmade sushi that melts your heart, one bite at a time</p>
+            <p class="supporting-text">Oh Sushi is a home-based go-to-sushi that will surely make your cravings satisfied!</p>
+        </div>
+    </section>
+
+    <!-- PARALLAX IMAGE SECTION -->
+    <section class="feature-parallax-section">
+        <div class="content-wrapper">
+            <div class="feature-box">
+                <div class="feature-icon">
+                    <img src="original rcp.png" alt="Original Recipes Icon">
+                </div>
+                <h3>ORIGINAL RECIPES</h3>
+                <p>We source unique ingredients, prepare dishes based on age-old traditions, and infuse every meal with a modern, delightful twist. Our focus is always on flavour and freshness.</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon">
+                    <img src="quality food.png" alt="Quality Foods Icon">
+                </div>
+                <h3>QUALITY FOODS</h3>
+                <p>We maintain rigorous quality standards, ensuring all our ingredients are ethically sourced and handled with the utmost care. Taste the difference quality makes in every bite.</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon">
+                    <img src="deliver.png" alt="Fastest Delivery Icon">
+                </div>
+                <h3>FASTEST DELIVERY</h3>
+                <p>Once your order is ready, we dispatch it immediately using our dedicated delivery fleet. Hot food stays hot, cold food stays cold, delivered right to your location quickly.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- THUMBNAIL IMAGES -->
+    <section id="gallery" class="thumbnail-section">
+        <div class="section-container">
+            <h2 class="section-title">MAKI OVERLOAD PLATTERS</h2>
+            <div class="thumbnail-grid">
+                <div class="thumbnail-item">
+                    <img src="mini maki.png" alt="Cheesy Maki" class="thumb-image">
+                    <p class="thumb-label">Mini Maki-Bite-Sized Fun</p>
+                </div>
+                
+                <div class="thumbnail-item">
+                    <img src="medium maki.png" alt="Cheese Mango Sushi" class="thumb-image">
+                    <p class="thumb-label">Medium Maki-Sharing Happiness</p>
+                </div>
+                
+                <div class="thumbnail-item">
+                    <img src="large maki.png" alt="Spicy Crazy Maki" class="thumb-image">
+                    <p class="thumb-label">Large Maki-Sushi Party Platter</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BANNER SLIDER -->
+    <section class="banner-slider-section">
+        <div class="full-width-banner">
+            <div class="banner-slide active">
+                <img src="banner 1.png" class="banner-image">
+            </div>
+            <div class="banner-slide">
+                <img src="banner 2.png" class="banner-image">
+            </div>
+            <div class="banner-slide">
+                <img src="banner 3.png" class="banner-image">
+            </div>
+
+            <button class="slider-arrow left-arrow">&lt;</button>
+            <button class="slider-arrow right-arrow">&gt;</button>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="sushi-footer">
+        <div class="footer-top-section">
+            <div class="footer-container top-content-flex">
+                <div class="review-block">
+                    <h4>Customer Favorite</h4>
+                    <p class="subtitle">Real taste, real freshness</p>
+                    <div class="stars">★★★★★</div>
+                    <p>Home-based Kitchen, Manila Area</p>
+                    <p>Delivery Hours: Mon-Sun 10am - 8pm</p>
+                    <p>Phone: 0938-735-6641</p>
+                </div>
+
+                <div id="contact" class="cta-block">
+                    <h4>Ready to satisfy your cravings?</h4>
+                    <p class="cta-text">Explore our menu of handmade rolls, fresh ingredients, and signature platters. Order now for the fastest delivery right to your door!</p>
+                    <p>FB: <a href="https://www.facebook.com/share/1DJYbRSvBH/" target="_blank">Oh Sushi Facebook</a></p>
+                    <div class="social-icons-top">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-copyright">
+            <div class="footer-container">
+                <p>© 2024 OH SUSHI | A roll you'll fall for</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

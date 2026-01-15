@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oh Sushi - Menu</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- NAVIGATION MENU -->
+    <header class="site-header">
+        <div class="nav-container">
+            <div class="logo-area">
+                <img src="logo.png" alt="Oh Sushi Logo" class="site-logo">
+                <div class="business-name">
+                    <h1>OH SUSHI</h1>
+                </div>
+            </div>
+            
+            <nav class="main-navigation">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="menu.html">MENU</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                    <li><a href="#" id="cart-icon" class="cart-link"> Cart (<span id="cart-count">0</span>)</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- MENU HEADER -->
+        <div class="container">
+            <h1>Oh Sushi Menu</h1>
+        </div>
+
+        <!-- Mini Maki Section -->
+        <section class="menu-category">
+            <h2>Mini Maki-Bite-Sized Fun (10 Pieces)</h2>
+            <div class="menu-grid">
+                <div class="menu-item" data-name="Cheesy Maki" data-price="100">
+                    <img src="cheesymaki.jpg" alt="Cheesy Maki" class="hero-img">
+                    <h3>Cheesy Maki</h3>
+                    <p class="description">10 Pieces of delicious Cheesy Maki rolls topped with creamy cheese for a rich and savory taste.</p>
+                    <div class="item-footer">
+                        <span class="price">₱100</span>
+                        <button class="add-to-cart">Add To Cart</button>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-name="California Maki" data-price="100">
+                    <img src="californiamakii.jpg" alt="California Maki" class="hero-img">
+                    <h3>California Maki</h3>
+                    <p class="description">10 Pieces of classic California Maki made with crab stick, cucumber, and a hint of sweetness.</p>
+                    <div class="item-footer">
+                        <span class="price">₱100</span>
+                        <button class="add-to-cart">Add To Cart</button>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-name="Sesame Roll Maki" data-price="100">
+                    <img src="rolledmaki.jpg" alt="Sesame Roll Maki" class="hero-img">
+                    <h3>Sesame Roll Maki</h3>
+                    <p class="description">10 Pieces of Sesame Roll Maki coated with roasted sesame seeds for a nutty and aromatic flavor.</p>
+                    <div class="item-footer">
+                        <span class="price">₱100</span>
+                        <button class="add-to-cart">Add To Cart</button>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-name="Kani Maki" data-price="120">
+                    <img src="kanimaki.jpg" alt="Kani Maki" class="hero-img">
+                    <h3>Kani Maki</h3>
+                    <p class="description">10 Pieces of Kani Maki with fresh crab stick rolled with rice and seaweed, light and satisfying.</p>
+                    <div class="item-footer">
+                        <span class="price">₱120</span>
+                        <button class="add-to-cart">Add To Cart</button>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-name="Kani Sushi" data-price="120">
+                    <img src="sushitoppedkani.jpg" alt="Kani Sushi" class="hero-img">
+                    <h3>Kani Sushi</h3>
+                    <p class="description">10 Pieces of Kani Sushi topped with crab stick, simple and flavorful.</p>
+                    <div class="item-footer">
+                        <span class="price">₱120</span>
+                        <button class="add-to-cart">Add To Cart</button>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-name="Cheese Mango Sushi" data-price="120">
+                    <img src="sushicheesemango.jpg" alt="Cheese Mango Sushi" class="hero-img">
+                    <h3>Cheese Mango Sushi</h3>
+                    <p class="description">10 Pieces of sushi with cheese and mango. A sweet and savory mix of ripe mango and creamy cheese in sushi form.</p>
+                    <div class="item-footer">
+                        <span class="price">₱120</span>
+                        <button class="add-to-cart">Add To Cart</button>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-name="Crazy Maki" data-price="130">
+                    <img src="crazymaki.jpg" alt="Crazy Maki" class="hero-img">
+                    <h3>Crazy Maki</h3>
+                    <p class="description">10 Pieces of our signature Crazy Maki. A flavorful roll with mixed fillings and sauces for a bold taste.</p>
+                    <div class="item-footer">
+                        <span class="price">₱130</span>
+                        <button class="add-to-cart">Add To Cart</button>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-name="Spicy Crazy Maki" data-price="130">
+                    <img src="spicycrazymaki.jpg" alt="Spicy Crazy Maki" class="hero-img">
+                    <h3>Spicy Crazy Maki</h3>
+                    <p class="description">10 Pieces of spicy version of the Crazy Maki perfect for those who love a little heat.</p>
+                    <div class="item-footer">
+                        <span class="price">₱130</span>
+                        <button class="add-to-cart">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Medium Maki Section -->
+        <section class="menu-category">
+            <h2>Medium Maki-Sharing Happiness</h2>
+            <div class="menu-grid platter-grid">
+                <div class="menu-item platter-item" data-name="Maki Overload (30 pcs)" data-price="330">
+                    <img src="makioverload30pcs.jpg" alt="30 Pieces" class="hero-img">
+                    <h3>Maki Overload (30 pcs)</h3>
+                    <div class="item-footer">
+                        <span class="price">₱330</span>
+                        <button class="add-to-cart">Add To Cart</button>
+                    </div>
+                </div>
+
+                <div class="menu-item platter-item" data-name="Maki Overload (50 pcs)" data-price="580">
+                    <img src="50pcsmaki.jpg" alt="50 Pieces" class="hero-img">
+                    <h3>Maki Overload (50 pcs)</h3>
+                    <div class="item-footer">
+                        <span class="price">₱580</span>
+                        <button class="add-to-cart">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Large Maki Section -->
+        <section class="menu-category">
+            <h2>Large Maki-Sushi Party Platter</h2>
+            <div class="menu-grid platter-grid">
+                <div class="menu-item platter-item" data-name="Maki Overload (80 pcs)" data-price="900">
+                    <img src="makioveload80pcs.jpg" alt="80 Pieces" class="hero-img">
+                    <h3>Maki Overload (80 pcs)</h3>
+                    <div class="item-footer">
+                        <span class="price">₱900</span>
+                        <button class="add-to-cart">Add To Cart</button>
+                    </div>
+                </div>
+
+                <div class="menu-item platter-item" data-name="Maki Overload (100 pcs)" data-price="1200">
+                    <img src="makioverload100pcs.jpg" alt="100 Pieces" class="hero-img">
+                    <h3>Maki Overload (100 pcs)</h3>
+                    <div class="item-footer">
+                        <span class="price">₱1,200</span>
+                        <button class="add-to-cart">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- QUANTITY MODAL -->
+    <div id="quantity-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title">Select Quantity</h2>
+            <p id="modal-price"></p>
+            
+            <div class="quantity-selector">
+                <button id="decrease-qty" class="qty-btn">-</button>
+                <input type="number" id="quantity-input" value="1" min="1">
+                <button id="increase-qty" class="qty-btn">+</button>
+            </div>
+            
+            <button id="confirm-add" class="confirm-btn">Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- SHOPPING CART SECTION -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content cart-modal-content">
+            <span class="close">&times;</span>
+            <h2>Shopping Cart</h2>
+            
+            <div id="cart-items-container" class="cart-items-container">
+                <p class="empty-cart">Your cart is empty</p>
+            </div>
+            
+            <div class="cart-summary">
+                <h3>Total: ₱<span id="cart-total">0</span></h3>
+                <button id="checkout-btn" class="checkout-btn">Proceed to Checkout</button>
+                <button id="clear-cart-btn" class="clear-cart-btn">Clear Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="sushi-footer">
+        <div class="footer-top-section">
+            <div class="footer-container top-content-flex">
+                <div class="review-block">
+                    <h4>Customer Favorite</h4>
+                    <p class="subtitle">Real taste, real freshness</p>
+                    <div class="stars">★★★★★</div>
+                    <p>Home-based Kitchen, Manila Area</p>
+                    <p>Delivery Hours: Mon-Sun 10am - 8pm</p>
+                    <p>Phone: 0938-735-6641</p>
+                </div>
+
+                <div id="contact" class="cta-block">
+                    <h4>Ready to satisfy your cravings?</h4>
+                    <p class="cta-text">Explore our menu of handmade rolls, fresh ingredients, and signature platters. Order now for the fastest delivery right to your door!</p>
+                    <p>FB: <a href="https://www.facebook.com/share/1DJYbRSvBH/" target="_blank">Oh Sushi Facebook</a></p>
+                    <div class="social-icons-top">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-copyright">
+            <div class="footer-container">
+                <p>© 2024 OH SUSHI | A roll you'll fall for</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
