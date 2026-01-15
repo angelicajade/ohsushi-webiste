@@ -187,6 +187,9 @@ img {
 }
 
 .headline-section .supporting-text {
+    position: absolute;
+    bottom: 20px;
+    right:20px;
     font-size: clamp(0.65rem, 1.4vw, 0.95rem);
     line-height: 1.25;
 }
